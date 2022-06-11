@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>BANNER</h2>
+    <h1>{{ this.websiteTitle }}</h1>
   </div>
 </template>
 
@@ -8,7 +8,9 @@
 export default {
   name: "BannerComponent",
   data() {
-    return {};
+    return {
+      websiteTitle: process.env.VUE_APP_WEBSITE_TITLE,
+    };
   },
 };
 </script>

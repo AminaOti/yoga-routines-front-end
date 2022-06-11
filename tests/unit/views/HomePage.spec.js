@@ -1,7 +1,7 @@
 import { shallowMount } from "@vue/test-utils";
 import homePageView from "@/views/HomePage.vue";
 import childHeaderComponent from "@/components/HeaderComponent.vue";
-import childBannerComponent from "@/components/HeaderComponent.vue";
+import childBannerComponent from "@/components/BannerComponent.vue";
 
 const shallowMountHomePageView = () =>
     shallowMount(homePageView, {});

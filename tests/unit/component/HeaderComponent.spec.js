@@ -1,7 +1,7 @@
 import { shallowMount } from "@vue/test-utils";
 import headerComponent from "@/components/HeaderComponent.vue";
 
-const APP_TITLE = process.env.VUE_APP_WEBSITE_TITLE
+const WEBSITE_TITLE = process.env.VUE_APP_WEBSITE_TITLE
 const LINK_TO_HOME_PAGE_TEST_ID = "[data-test=home-page-link]"
 const MOCK_HOME_PAGE_ROUTE = "/"
 
@@ -20,9 +20,9 @@ const shallowMountHeaderComponent = () =>
 
 describe('The Header Component - src/components/HeaderComponent.vue', () => {
 
-    test(`should contain the App title ${APP_TITLE}`, () => {
+    test(`should contain the website title ${WEBSITE_TITLE}`, () => {
         const wrapper = shallowMountHeaderComponent();
-        expect(wrapper.html()).toContain(APP_TITLE);
+        expect(wrapper.html()).toContain(WEBSITE_TITLE);
     })
 
     test(`should contain a link to the Home Page`, async () => {
