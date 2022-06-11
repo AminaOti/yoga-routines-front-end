@@ -1,7 +1,7 @@
 import { shallowMount } from "@vue/test-utils";
 import headerComponent from "@/components/HeaderComponent.vue";
 
-const APP_TITLE = `Yoga Routines` //get from env
+const APP_TITLE = process.env.VUE_APP_WEBSITE_TITLE
 
 const shallowMountHeaderComponent = () =>
     shallowMount(headerComponent, {});
