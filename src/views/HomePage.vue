@@ -1,11 +1,18 @@
 <template>
-  <span test-id="HomePage"> </span>
-  <h1>Test</h1>
+  <div>
+    <span test-id="HomePage"> </span>
+    <HeaderComponent></HeaderComponent>
+  </div>
 </template>
 
 <script>
+import HeaderComponent from "../components/HeaderComponent.vue";
 export default {
   name: "HomePage",
+
+  components: {
+    HeaderComponent,
+  },
 };
 </script>
 
