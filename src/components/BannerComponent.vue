@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ this.websiteTitle }}</h1>
+    <h3>{{ this.websiteDescription }}</h3>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ export default {
   data() {
     return {
       websiteTitle: process.env.VUE_APP_WEBSITE_TITLE,
+      websiteDescription: process.env.VUE_APP_WEBSITE_DESCRIPTION,
     };
   },
 };
