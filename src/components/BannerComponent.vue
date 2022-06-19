@@ -2,7 +2,7 @@
   <div>
     <h1>{{ this.websiteTitle }}</h1>
     <h3>{{ this.websiteDescription }}</h3>
-    <img v-bind:src="this.websiteImage" alt="website-image" />
+    <img src="@/assets/images/websiteImage.jpeg" alt="website-image" />
   </div>
 </template>
 
