@@ -3,7 +3,7 @@ import bannerComponent from "@/components/BannerComponent.vue";
 
 const WEBSITE_TITLE = process.env.VUE_APP_WEBSITE_TITLE
 const WEBSITE_DESCRIPTION = process.env.VUE_APP_WEBSITE_DESCRIPTION
-const WEBSITE_IMAGE = "assets/images/websiteImage.jpeg"
+const WEBSITE_IMAGE = "websiteImage.jpeg"
 
 const shallowMountBanneromponent = () =>
     shallowMount(bannerComponent, {});
