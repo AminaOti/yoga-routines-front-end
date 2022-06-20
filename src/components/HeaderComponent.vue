@@ -1,11 +1,21 @@
 <template>
   <div>
-    <h1>{{ this.websiteTitle }}</h1>
-    <h1 v-on:click="linkToHomePage" data-test="home-page-link">Home Page</h1>
+    <header>
+      <a>{{ this.websiteTitle }}</a>
+
+      <a
+        class="page-links"
+        v-on:click="linkToHomePage"
+        data-test="home-page-link"
+      >
+        Home Page
+      </a>
+    </header>
   </div>
 </template>
 
 <script>
+import "../assets/styles/theme-colors.scss";
 export default {
   name: "HeaderComponent",
   data() {
@@ -22,4 +32,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+* {
+  color: var(--secondary-variant-color);
+  background-color: var(--primary-color);
+  padding: 7px 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+</style>
