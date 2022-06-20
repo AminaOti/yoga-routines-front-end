@@ -44,4 +44,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.page-links:hover {
+  color: var(--secondary-color);
+}
 </style>
