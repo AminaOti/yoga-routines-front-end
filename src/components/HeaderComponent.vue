@@ -37,6 +37,7 @@ export default {
   color: var(--secondary-variant-color);
   background-color: var(--primary-color);
   padding: 7px 10px;
+  cursor: default;
 }
 
 header {
