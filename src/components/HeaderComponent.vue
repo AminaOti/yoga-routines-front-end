@@ -38,6 +38,7 @@ export default {
   background-color: var(--primary-color);
   padding: 7px 10px;
   cursor: default;
+  font-size: 20px;
 }
 
 header {
