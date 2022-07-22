@@ -3,18 +3,21 @@
     <span test-id="HomePage"> </span>
     <HeaderComponent></HeaderComponent>
     <BannerComponent></BannerComponent>
+    <CarouselComponent></CarouselComponent>
   </div>
 </template>
 
 <script>
 import HeaderComponent from "../components/HeaderComponent.vue";
 import BannerComponent from "../components/BannerComponent.vue";
+import CarouselComponent from "../components/CarouselComponent.vue";
 export default {
   name: "HomePage",
 
   components: {
     HeaderComponent,
     BannerComponent,
+    CarouselComponent,
   },
 };
 </script>
