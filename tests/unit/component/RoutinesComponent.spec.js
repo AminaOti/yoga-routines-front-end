@@ -1,5 +1,8 @@
 import { shallowMount } from "@vue/test-utils";
 import routinesComponent from "@/components/RoutinesComponent.vue";
+const axios = require('axios');
+
+jest.mock('axios');
 
 const ROUTINES = [{ title: 'Sun Salutation' }, { title: 'Toppling Tree' }, { title: 'Warrior Pose' }]
 const ROUTINE_TITLES = ROUTINES.map((routine) => {
@@ -16,6 +19,12 @@ describe('Routines Component - src/components/RoutinesComponent.vue', () => {
         expect(wrapper.html()).toContain('Routines');
     });
     describe('should display all the routines', () => {
+
+        test('should GET a list of routine titles from the backend', () => {
+            // mock or stub http request
+
+        })
+
         test('should display the titles of the routines', async () => {
             const wrapper = shallowMountRoutinesComponent();
             await wrapper.setData({ routines: ROUTINES });
