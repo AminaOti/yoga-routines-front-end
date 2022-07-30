@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vueper-slides :visible-slides="3" slide-multiple :gap="3">
+    <vueper-slides :visible-slides="3" slide-multiple :gap="3" arrows="true">
       <vueper-slide
         v-for="(slide, i) in slides"
         :key="i"
@@ -63,5 +63,10 @@ export default {
 <style lang="scss" scoped>
 .vueper-slide {
   background-color: var(--secondary-variant-color);
+}
+
+.vueperslides__arrow {
+  color: yellow;
+  stroke-width: 10;
 }
 </style>
