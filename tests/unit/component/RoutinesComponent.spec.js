@@ -24,7 +24,7 @@ describe('Routines Component - src/components/RoutinesComponent.vue', () => {
             })
             const wrapper = await mount(routinesComponent, {});
 
-            //await wrapper.vm.getRoutineTitles()
+            await wrapper.vm.getRoutineTitles()
             const data = wrapper.vm.$data.routineTitles
             expect(ROUTINE_TITLES).toContain(data[0] && data[1] && data[2]);
         });
