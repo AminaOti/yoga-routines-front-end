@@ -29,11 +29,6 @@ describe('Routines Component - src/components/RoutinesComponent.vue', () => {
             expect(ROUTINE_TITLES).toContain(data[0] && data[1] && data[2]);
         });
 
-        // test('should display the titles of the routines', async () => {
-        //     const wrapper = shallowMountRoutinesComponent();
-        //     await wrapper.setData({ routines: ROUTINE_TITLES });
-        //     expect(wrapper.html()).toContain(ROUTINE_TITLES[0] && ROUTINE_TITLES[1] && ROUTINE_TITLES[2]);
-        // });
-
+        test.todo('should display the titles of the routines ');
     });
 });
