@@ -15,7 +15,8 @@
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.13",
-    "vueperslides": "^3.4.2"
+    "vueperslides": "^3.4.2",
+    "vuestic-ui": "^1.4.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
